@@ -16,6 +16,7 @@ class NewsPageView(TemplateView):
         context[
             "news_preview"
         ] = "Предварительное описание, которое заинтересует каждого"
+        context["range"] = range(5)
         return context
 
 
@@ -33,4 +34,7 @@ class DocSitePageView(TemplateView):
 
 class LoginPageView(TemplateView):
     template_name = "mainapp/login.html"
+
+
+
 
