@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load email_to_link %}
+{% load number_to_link %}
 
 {% block content %}
 
@@ -38,7 +39,7 @@
         <p class="card-text">
         <ul class="list-unstyled">
           <li>Телефон</li>
-          <li><strong>+7-999-11-11111</strong></li>
+          <li><strong>{{ '+7-999-11-11111'|number_to_link }}</strong></li>
         </ul>
         <ul class="list-unstyled">
           <li>Email</li>
@@ -75,7 +76,7 @@
         <p class="card-text">
         <ul class="list-unstyled">
           <li>Телефон</li>
-          <li><strong>+7-999-22-22222</strong></li>
+          <li><strong>{{ '+7-999-22-22222'|number_to_link }}</strong></li>
         </ul>
         <ul class="list-unstyled">
           <li>Email</li>
@@ -110,7 +111,7 @@
         <p class="card-text">
         <ul class="list-unstyled">
           <li>Телефон</li>
-          <li><strong>+7-999-33-33333</strong></li>
+          <li><strong>{{ '+7-999-33-33333'|number_to_link }}</strong></li>
         </ul>
         <ul class="list-unstyled">
           <li>Email</li>
