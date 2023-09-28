@@ -79,6 +79,7 @@ fabric.properties
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+mainapp/__pycache__/views.cpython-310.pyc
 *.py[cod]
 *$py.class
 
