@@ -5,7 +5,7 @@ from mainapp import models as mainapp_models
 
 
 class MainPageView(TemplateView):
-    template_name = "mainapp/index.html"
+    template_name = "mainapp/index.html/"
 
 
 class NewsPageView(TemplateView):

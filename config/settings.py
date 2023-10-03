@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "social_django",
     "mainapp",
     "authapp",
+
 ]
 
 MIDDLEWARE = [
@@ -61,8 +62,9 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
+            # "templates/",
             os.path.join(BASE_DIR, 'mainapp', 'templates /'),
-            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates')
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -75,6 +77,7 @@ TEMPLATES = [
                 "mainapp.context_processors.example.simple_context_processor",
                 "social_django.context_processors.backends",
                 "social_django.context_processors.login_redirect",
+
             ],
         },
     },
@@ -113,6 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTH_USER_MODEL = "authapp.CustomUser"
+
 
 AUTHENTICATION_BACKENDS = (
     "social_core.backends.github.GithubOAuth2",
