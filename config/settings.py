@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "markdownify.apps.MarkdownifyConfig",
     "mainapp",
     "authapp",
+
 ]
 
 MIDDLEWARE = [
